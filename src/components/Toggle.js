@@ -1,10 +1,13 @@
 import React from 'react';
+import { useToggle } from '../hooks/useToggle';
 
 const Toggle = () => {
+  const { isToggled, toggle } = useToggle(false);
+
   return (
     <div>
-      <button>Toggle</button>
-      <p>To be Toggled</p>
+      <button onClick={toggle}>Toggle</button>
+      {isToggled && <p>To be Toggled</p>}
     </div>
   );
 };
