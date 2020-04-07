@@ -9,6 +9,7 @@ import green from "./green.png";
 import Toggle from './components/Toggle';
 import Inc from './components/Inc';
 import Mount from './components/Mount';
+import Hover from './components/Hover';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </Header>
       <Container>
         <h2>Super Cool</h2>
+        <Hover />
         <Toggle />
         <Inc />
         <Mount />
