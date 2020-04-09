@@ -11,7 +11,7 @@ export const useMeasure = () => {
   });
 
   const [resizeO] = useState(() => {
-    new ResizeObserver(([entry]) => setBounds(entry.content.rect))
+    return new ResizeObserver(([entry]) => setBounds(entry.content.rect))
   });
 
   useEffect(() => {
